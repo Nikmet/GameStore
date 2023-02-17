@@ -1,0 +1,33 @@
+.features
+    display: grid
+
+    padding: 15rem 0
+    background-color: $color-gray-light
+    grid-column: center-start / center-end
+    grid-gap: 3rem 4rem
+    align-items: start
+
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr))
+    color: $color-green-dark
+
+.feature
+    display: grid
+    grid-template-columns: min-content 1fr
+    grid-gap: 1.5rem 2.5rem 
+
+    &__icon
+        width: 4.5rem
+        height: 4.5rem
+        grid-row: 1 / span 2
+
+    &_text
+        font-weight: 400
+        font-size: 1.6rem
+
+    &__title
+        align-content: center
+
+
+
+
+        

@@ -1,0 +1,121 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #AAAAAA;
+  line-height: 113%;
+  font-size: 1.6rem;
+  background-color: #F5F5F5;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.title-1 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  color: #fff;
+}
+
+.title-2 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.5rem;
+  color: #F5F5F5;
+}
+
+.title-3 {
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
+  color: #425844;
+}
+.title-3_white {
+  color: #fff;
+}
+.title-3_green-light {
+  color: #61A568;
+}
+
+.cards {
+  background-color: #F5F5F5;
+  grid-column: center-start/center-end;
+}
+
+.header {
+  background-color: #101D2C;
+  grid-column: full-start/col-end 6;
+}
+
+.features {
+  display: grid;
+  padding: 15rem 0;
+  background-color: #F5F5F5;
+  grid-column: center-start/center-end;
+  grid-gap: 3rem 4rem;
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  color: #425844;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-gap: 1.5rem 2.5rem;
+}
+.feature__icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  grid-row: 1/span 2;
+}
+.feature_text {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.feature__title {
+  align-content: center;
+}
+
+.gamers {
+  background-color: #101D2C;
+  grid-column: col-start 7/full-end;
+}
+
+.banner-img, .banner-text {
+  background-color: #101D2C;
+}
+.banner-img {
+  grid-column: full-start/col-end 4;
+}
+.banner-text {
+  grid-column: col-start 5/full-end;
+}
+
+.sidebar {
+  background-color: #425844;
+  grid-column: sidebar-start/sidebar-end;
+  grid-row: 1/-1;
+}
+
+.gallery {
+  background-color: #101D2C;
+  grid-column: full-start/full-end;
+}
+
+.footer {
+  background-color: #101D2C;
+  grid-column: full-start/full-end;
+}/*# sourceMappingURL=style.css.map */
