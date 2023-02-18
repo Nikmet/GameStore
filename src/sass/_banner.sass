@@ -4,6 +4,21 @@
 
     &-img
         grid-column: full-start / col-end 4
+        display: grid
+        grid-template-columns: repeat(16, 1fr)
+        grid-template-rows: repeat(24, 1fr)
+        background: url(../img/banner-bg.png) center / cover no-repeat
+
+        &__img-1
+            width: 100%
+            grid-column: 3 / span 11
+            grid-row: 3 / span 8
+        &__img-2    
+            width: 100%
+            grid-column: 6 / -1
+            grid-row: 10 / span 8
+            transform: translateX(5%)
+
 
     &-text
         grid-column: col-start 5 / full-end
