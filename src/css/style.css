@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Montserrat";
   font-weight: 400;
-  color: #AAAAAA;
+  color: #F5F5F5;
   line-height: 113%;
   font-size: 1.6rem;
   background-color: #F5F5F5;
@@ -33,7 +33,7 @@ body {
 .title-2 {
   font-weight: 700;
   font-size: 4rem;
-  line-height: 5.5rem;
+  line-height: 100%;
   color: #F5F5F5;
 }
 
@@ -47,6 +47,14 @@ body {
   color: #fff;
 }
 .title-3_green-light {
+  color: #61A568;
+}
+
+.title-4 {
+  font-weight: 300;
+  font-size: 1.7rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.13em;
   color: #61A568;
 }
 
@@ -102,6 +110,13 @@ body {
 }
 .banner-text {
   grid-column: col-start 5/full-end;
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  padding: 0 4vw;
+}
+.banner-text__text {
+  margin-bottom: 4rem;
 }
 
 .sidebar {
@@ -118,4 +133,23 @@ body {
 .footer {
   background-color: #101D2C;
   grid-column: full-start/full-end;
+}
+
+.btn {
+  background: #61A568;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #F5F5F5;
+  border: 0;
+  padding: 1.5rem 3rem;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background: #508855;
+  color: #fff;
+}
+
+.mb-30px {
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=style.css.map */
