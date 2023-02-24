@@ -115,6 +115,15 @@ body {
   grid-column: full-start/col-end 6;
 }
 
+.logo {
+  display: block;
+  margin-bottom: 8rem;
+}
+.logo__img {
+  display: block;
+  margin: 0 auto;
+}
+
 .features {
   display: grid;
   padding: 15rem 0;
@@ -185,6 +194,30 @@ body {
   background-color: #425844;
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1/-1;
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.humburger {
+  border: 0;
+  background: #F5F5F5;
+  height: 0.2rem;
+  width: 4.5rem;
+}
+.humburger::before, .humburger::after {
+  content: "";
+  display: block;
+  border: 0;
+  background: #F5F5F5;
+  height: 0.2rem;
+  width: 4.5rem;
+}
+.humburger::before {
+  transform: translateY(-1.5rem);
+}
+.humburger::after {
+  transform: translateY(1.5rem);
 }
 
 .gallery {
@@ -255,16 +288,32 @@ body {
   grid-column: 4/5;
   grid-row: 6/span 2;
 }
-.gallery__img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
 .footer {
   background-color: #101D2C;
   grid-column: full-start/full-end;
+  padding: 8rem 3rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-items: center;
+  grid-gap: 3.5rem;
+}
+.nav__link:link, .nav__link:visited {
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #F5F5F5;
+  text-align: center;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.nav__link:hover, .nav__link:active {
+  color: #AAAAAA;
+  transform: translateY(-0.3rem);
 }
 
 .btn {
